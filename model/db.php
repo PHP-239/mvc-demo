@@ -3,7 +3,7 @@ function getPDO(){
 
     $dsn = "mysql:host=localhost;dbname=cruddy;charset=utf8mb4";
     $user = "root";
-    $pass = "";
+    $pass = "root";
 
     try {
         $pdo = new PDO($dsn, $user, $pass, [

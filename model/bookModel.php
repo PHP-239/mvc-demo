@@ -1,11 +1,11 @@
 <?php 
     include "db.php";
-    function getbooks(){
+    function getBooks(){
         
 
         $pdo = getPDO();
 
-        $stmt = $pdo->prepare("Select * from books");
+        $stmt = $pdo->prepare("SELECT * FROM beverages");
         $stmt->execute();
         return $stmt->fetchAll();
         
